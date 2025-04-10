@@ -1,0 +1,51 @@
+body{
+    font-family: "Commissioner", sans-serif;
+}
+h1{
+    font-family:"ivyora-display";
+    font-size: 52px;
+    font-weight: 400;
+}
+h2{
+    font-family:"ivyora-display";
+    font-size: 42px;
+}
+h3{
+    font-family:"ivyora-display";
+    font-size: 32px;
+}
+h4{
+    font-size: 17px;
+    font-weight: 400;
+
+}
+a{
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-primary{
+    font-size: 14px;
+    color: #0F0E0E;
+    border: 1px solid #0F0E0E;
+    border-radius: 999px;
+    padding: 8px 30px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+.custom-container{
+    max-width: 1304px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.swiper-slide{
+    height: 100vh !important;
+}
+.swiper-pagination-bullet{
+    background-color: #E5E3DE !important;
+    width: 60px !important;
+    border-radius: 50px !important;
+    height: 2px !important;
+}
+

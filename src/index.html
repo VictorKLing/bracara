@@ -24,10 +24,27 @@
       <section>
         <div class="custom-container">
           <div class="flex items-center justify-between pt-[37px] pb-[35px]">
-            <a href="/" class="text-2xl font-bold text-black">
+            <a href="/" class="">
               <img src="./img/logo/LogoFundacao.svg" alt="" />
             </a>
-            <div class="flex flex-col">
+            <button id="menu-toggle" class="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18"></path>
+                <path d="M3 18h18"></path>
+                <path d="M3 6h18"></path>
+              </svg>
+            </button>
+            <div class="hidden lg:flex flex-col">
               <form
                 action=""
                 class="border-b border-solid border-[#0F0E0E40] self-end"
@@ -52,32 +69,32 @@
                 </button>
               </form>
               <nav>
-                <ul class="hidden md:flex mt-8 gap-10 items-center">
+                <ul class="flex mt-8 gap-10 items-center">
                   <li>
-                    <a href="#" class="text-dark hover:text-gray-700"
+                    <a href="#" class="text-sm font-medium text-dark"
                       >A FUNDAÇÃO</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-dark hover:text-gray-700"
+                    <a href="#" class="text-sm font-medium text-dark"
                       >A COMUNIDADE</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-dark hover:text-gray-700"
+                    <a href="#" class="text-sm font-medium text-dark"
                       >PROJETOS</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-dark hover:text-gray-700"
+                    <a href="#" class="text-sm font-medium text-dark"
                       >PUBLICAÇÕES</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-dark hover:text-gray-700">AGENDA</a>
+                    <a href="#" class="text-sm font-medium text-dark">AGENDA</a>
                   </li>
                   <li>
-                    <a href="#" class="text-dark hover:text-gray-700"
+                    <a href="#" class="text-sm font-medium text-dark"
                       >CONTACTOS</a
                     >
                   </li>
@@ -91,13 +108,15 @@
 
     <main>
       <section class="bg-sand">
-        <div class="custom-container pt-[179px] pb-11">
-          <div class="flex items-end justify-between">
+        <div
+          class="custom-container pt-[115px] lg:pt-[179px] pb-[73px] lg:pb-11"
+        >
+          <div class="lg:flex items-end justify-between">
             <h1 class="">
               UMA PONTE ENTRE<br />
               CULTURA E COMUNIDADE
             </h1>
-            <div>
+            <div class="mt-10">
               <a class="btn-primary"> CONHECER A FUNDAÇÃO </a>
             </div>
           </div>
@@ -264,10 +283,12 @@
         </div>
       </section>
       <section class="bg-sand">
-        <div class="h-[550px]">
-          <div>
-            <span>Bragati</span>
-            <p>Mapa literário da cidade de braga</p>
+        <div class="custom-container h-[550px] flex flex-col">
+          <div class="flex-grow flex justify-center items-center pt-[103px]">
+            <img src="./img/logo/LogoBragaLit.svg" alt="" />
+          </div>
+          <div class="flex justify-end pb-[103px]">
+            <a href="#" class="btn-primary"> VER TODAS AS PUBLICAÇÕES </a>
           </div>
         </div>
       </section>
@@ -395,10 +416,12 @@
       <section>
         <div class="">
           <div class="flex">
-            <div class="flex justify-end w-1/2 bg-sand py-[82px] px-10">
+            <div
+              class="flex justify-end w-1/2 bg-sand py-[82px] pr-[60px] pl-10"
+            >
               <div class="max-w-[574px]">
                 <h3 class="leading-11">
-                  <span class="text-[42px] font-medium">NEWSLETTER</span> /
+                  <span class="text-[42px] font-semibold">NEWSLETTER</span> /
                   ESTEJA A PAR DAS ATIVIDADES MAIS RECENTES DA FUNDAÇÃO.
                 </h3>
 
@@ -407,17 +430,17 @@
                     type="email"
                     class="w-full h-[60px] bg-transparent border border-black mb-7"
                   />
-                  <div>
+                  <div class="flex justify-end">
                     <button class="btn-primary">SUBSCREVER A NEWSLETTER</button>
                   </div>
                 </form>
               </div>
             </div>
 
-            <div class="w-1/2 bg-white py-[82px] px-10">
+            <div class="w-1/2 bg-white py-[82px] pl-[60px] pr-10">
               <div class="flex flex-col justify-between max-w-md h-full">
                 <h3 class="leading-11">
-                  <span class="text-[42px] font-medium"
+                  <span class="text-[42px] font-semibold"
                     >MACENATO & PARCERIAS</span
                   >
                   / JUNTE-SE A NÓS NESTA JORNADA DE CONHECIMENTO E CULTURA!
@@ -434,7 +457,7 @@
     <footer>
       <section class="bg-dark">
         <div class="custom-container mx-auto pt-[88px] pb-[42px]">
-          <div class="flex items-end gap-[500px]">
+          <div class="flex flex-col lg:flex-row lg:gap-[420px]">
             <div class="">
               <div class="text-2xl font-bold mb-4">
                 <svg
@@ -638,66 +661,180 @@
                   </g>
                 </svg>
               </div>
-              <div class="text-sm text-white mt-8">
+              <div class="text-sm text-light mt-8">
                 <p>(+351) 253 268 180</p>
                 <p class="mt-3">FBA@CM-BRAGA.PT</p>
                 <p class="mt-3">
                   RUA FREI CAETANO BRANDÃO 166A<br />4700-031 BRAGA
                 </p>
               </div>
+              <div class="mt-[60px] lg:mt-[100px] flex items-center gap-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24.171"
+                  height="23.707"
+                  viewBox="0 0 24.171 23.707"
+                >
+                  <g
+                    id="Grupo_175883"
+                    data-name="Grupo 175883"
+                    transform="translate(0)"
+                  >
+                    <path
+                      id="Caminho_9636"
+                      data-name="Caminho 9636"
+                      d="M112.878,204.889c0-2.24,1.031-3.575,3.007-3.575,1.814,0,2.686,1.282,2.686,3.575v8.367h4.911V203.164c0-4.269-2.42-6.334-5.8-6.334a5.556,5.556,0,0,0-4.8,2.633v-2.146h-4.733v15.939h4.733Z"
+                      transform="translate(-99.31 -189.55)"
+                      fill="#f0f0f0"
+                    />
+                    <rect
+                      id="Retângulo_1342"
+                      data-name="Retângulo 1342"
+                      width="4.934"
+                      height="15.94"
+                      transform="translate(0.474 7.767)"
+                      fill="#f0f0f0"
+                    />
+                    <path
+                      id="Caminho_9635"
+                      data-name="Caminho 9635"
+                      d="M104.228,196.739a2.941,2.941,0,1,0-2.918-2.941A2.93,2.93,0,0,0,104.228,196.739Z"
+                      transform="translate(-101.31 -190.857)"
+                      fill="#f0f0f0"
+                    />
+                  </g>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23.706"
+                  height="23.706"
+                  viewBox="0 0 23.706 23.706"
+                >
+                  <g
+                    id="Grupo_3348"
+                    data-name="Grupo 3348"
+                    transform="translate(0)"
+                  >
+                    <path
+                      id="Caminho_9624"
+                      data-name="Caminho 9624"
+                      d="M222.574,139.237c3.165,0,3.54.012,4.79.069a6.568,6.568,0,0,1,2.2.409,3.917,3.917,0,0,1,2.249,2.249,6.568,6.568,0,0,1,.409,2.2c.057,1.251.069,1.626.069,4.79s-.013,3.54-.069,4.789a6.57,6.57,0,0,1-.409,2.2,3.917,3.917,0,0,1-2.249,2.249,6.544,6.544,0,0,1-2.2.408c-1.251.057-1.624.069-4.79.069s-3.54-.013-4.789-.069a6.551,6.551,0,0,1-2.2-.408,3.926,3.926,0,0,1-2.249-2.249,6.547,6.547,0,0,1-.408-2.2c-.057-1.25-.069-1.624-.069-4.789s.012-3.54.069-4.79a6.545,6.545,0,0,1,.408-2.2,3.926,3.926,0,0,1,2.249-2.249,6.575,6.575,0,0,1,2.2-.409c1.25-.057,1.624-.069,4.789-.069m0-2.136c-3.219,0-3.623.015-4.887.072a8.715,8.715,0,0,0-2.877.551,6.061,6.061,0,0,0-3.466,3.467,8.678,8.678,0,0,0-.551,2.877c-.058,1.264-.072,1.668-.072,4.887s.014,3.622.072,4.887a8.678,8.678,0,0,0,.551,2.877,6.061,6.061,0,0,0,3.466,3.467,8.745,8.745,0,0,0,2.877.551c1.264.057,1.668.07,4.887.07s3.622-.014,4.887-.07a8.739,8.739,0,0,0,2.877-.551,6.068,6.068,0,0,0,3.467-3.467,8.706,8.706,0,0,0,.551-2.877c.058-1.264.072-1.668.072-4.887s-.014-3.622-.072-4.887a8.707,8.707,0,0,0-.551-2.877,6.068,6.068,0,0,0-3.467-3.467,8.71,8.71,0,0,0-2.877-.551c-1.264-.057-1.668-.072-4.887-.072"
+                      transform="translate(-210.722 -137.101)"
+                      fill="#f0f0f0"
+                    />
+                    <path
+                      id="Caminho_9625"
+                      data-name="Caminho 9625"
+                      d="M220.167,142.178a4.369,4.369,0,1,0,4.369,4.369,4.369,4.369,0,0,0-4.369-4.369m0,7.2A2.836,2.836,0,1,1,223,146.547a2.836,2.836,0,0,1-2.836,2.836"
+                      transform="translate(-208.315 -134.693)"
+                      fill="#f0f0f0"
+                    />
+                    <path
+                      id="Caminho_9626"
+                      data-name="Caminho 9626"
+                      d="M229.165,142.56a1.846,1.846,0,1,1-1.846-1.846,1.846,1.846,0,0,1,1.846,1.846"
+                      transform="translate(-209.397 -136.777)"
+                      fill="#f0f0f0"
+                    />
+                  </g>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10.942"
+                  height="23.706"
+                  viewBox="0 0 10.942 23.706"
+                >
+                  <path
+                    id="Caminho_9622"
+                    data-name="Caminho 9622"
+                    d="M162.6,159.739h4.773V147.785H170.7l.354-4h-3.686V141.5c0-.944.19-1.317,1.1-1.317h2.583v-4.154h-3.306c-3.552,0-5.153,1.564-5.153,4.559v3.191h-2.483v4.053H162.6Z"
+                    transform="translate(-160.112 -136.033)"
+                    fill="#f0f0f0"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="31.992"
+                  height="24"
+                  viewBox="0 0 31.992 24"
+                >
+                  <g
+                    id="Grupo_175884"
+                    data-name="Grupo 175884"
+                    transform="translate(0 0)"
+                  >
+                    <path
+                      id="Caminho_9637"
+                      data-name="Caminho 9637"
+                      d="M16.558,6.5c4.08,0,7.417.069,10.5.206h.087a2.877,2.877,0,0,1,2.624,3.068v.069l.006.069c.144,2.124.212,4.33.212,6.555s-.069,4.43-.212,6.555l-.006.069v.069a3.311,3.311,0,0,1-.837,2.256,2.418,2.418,0,0,1-1.787.837h-.1c-3.305.156-6.8.237-10.4.237H15.315c-3.612,0-7.1-.081-10.385-.231h-.1a2.406,2.406,0,0,1-1.781-.837,3.342,3.342,0,0,1-.837-2.256V23.1l-.006-.069C2.056,20.9,1.987,18.69,2,16.484v-.012c-.006-2.206.062-4.405.206-6.536l.006-.069V9.8A2.88,2.88,0,0,1,4.83,6.718h.087c3.093-.144,6.43-.206,10.51-.206h1.131m0-2.012H15.433c-3.6,0-7.136.05-10.6.206A4.862,4.862,0,0,0,.219,9.786C.062,12.023-.006,14.247,0,16.478s.056,4.455.212,6.686a4.879,4.879,0,0,0,4.618,5.1q5.136.244,10.485.237h1.35q5.352,0,10.491-.237a4.88,4.88,0,0,0,4.624-5.1q.225-3.346.212-6.692c.006-2.231-.062-4.455-.212-6.692a4.851,4.851,0,0,0-4.624-5.067c-3.462-.162-6.992-.212-10.6-.212Z"
+                      transform="translate(0 -4.5)"
+                      fill="#f0f0f0"
+                    />
+                    <path
+                      id="Caminho_9638"
+                      data-name="Caminho 9638"
+                      d="M14.555,21.87v-10.8l10.2,5.4Z"
+                      transform="translate(-2.26 -4.5)"
+                      fill="#f0f0f0"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
-            <div class="flex gap-[120px]">
+            <div class="flex gap-[120px] mt-[72px] lg:mt-0">
               <div>
-                <ul class="space-y-2 text-sm text-white">
-                  <li>A FUNDAÇÃO</li>
-                  <li>APRESENTAÇÃO</li>
-                  <li>CONSTITUIÇÃO</li>
-                  <li>DOCUMENTAÇÃO</li>
-                  <li>MECENATO</li>
+                <h5 class="text-light font-semibold text-[15px] lg:text-sm">A FUNDAÇÃO</h5>
+                <ul class="text-sm text-light mt-6">
+                  <li class="text-[13px] lg:text-[11px]">APRESENTAÇÃO</li>
+                  <li class="text-[13px] lg:text-[11px] mt-4">CONSTITUIÇÃO</li>
+                  <li class="text-[13px] lg:text-[11px] mt-4">DOCUMENTAÇÃO</li>
+                  <li class="text-[13px] lg:text-[11px] mt-4">MECENATO</li>
                 </ul>
               </div>
               <div>
-                <ul class="space-y-2 text-sm text-white">
-                  <li>NOTÍCIAS</li>
-                  <li>PROJETOS</li>
-                  <li>PUBLICAÇÕES</li>
-                  <li>AGENDA</li>
-                  <li>CONTACTOS</li>
+                <ul class="text-[15px] lg:text-sm text-light mb-6">
+                  <li class="font-semibold">A FUNDAÇÃO</li>
+                  <li class="font-semibold mt-4">NOTÍCIAS</li>
+                  <li class="font-semibold mt-4">PROJETOS</li>
+                  <li class="font-semibold mt-4">PUBLICAÇÕES</li>
+                  <li class="font-semibold mt-4">AGENDA</li>
+                  <li class="font-semibold mt-4">CONTACTOS</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="flex gap-4 mb-16 mt-[100px]">
-            <ul>
-              <li>
-                <a href=""> </a>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div class="border-t border-[#f0f0f02d]">
+          <div class="custom-container pt-[42px] lg:pt-[30px] pb-[42px] lg:pb-10">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p class="text-light text-[11px]">MECENAS</p>
+                <div class="grid grid-cols-2 lg:grid-cols-5 items-center gap-8 mt-6">
+                  <p class="text-light">Marca1</p>
+                  <p class="text-light">Marca1</p>
+                  <p class="text-light">Marca1</p>
+                  <p class="text-light">Marca1</p>
+                  <p class="text-light">Marca1</p>
+                </div>
+              </div>
 
-          <div class="flex items-center gap-8 mb-8">
-            <div class="text-white">THE SQUARE</div>
-            <div class="text-white">FLOWER</div>
-            <div class="text-white">MINIMAL</div>
-            <div class="text-white">CHEMICAL</div>
-            <div class="text-white">CIRCLE</div>
-          </div>
-
-          <div class="flex justify-between text-xs">
-            <div class="flex gap-4">
-              <a href="#" class="text-white hover:text-gray-300"
-                >TERMOS E CONDIÇÕES</a
-              >
-              <a href="#" class="text-white hover:text-gray-300"
-                >POLÍTICA DE PRIVACIDADE</a
-              >
-              <a href="#" class="text-white hover:text-gray-300"
-                >LIVRO DE RECLAMAÇÕES</a
-              >
-            </div>
-            <div>
-              <span>MADE BY</span>
-              <span class="ml-2">FRAMEWORK</span>
+              <div class="mt-[65px] lg:mt-0">
+                <div class="flex flex-col lg:flex-row gap-4 lg:gap-[30px]">
+                  <a href="#" class="text-light text-[11px]"
+                    >TERMOS E CONDIÇÕES</a
+                  >
+                  <a href="#" class="text-light text-[11px]"
+                    >POLÍTICA DE PRIVACIDADE</a
+                  >
+                  <a href="#" class="text-light text-[11px]"
+                    >LIVRO DE RECLAMAÇÕES</a
+                  >
+                </div>
+                <div class="flex lg:justify-end mt-[30px]">
+                  <span class="text-light text-[11px]">MADE BY</span>
+                  <span class="text-light text-[11px]">FRAMEWORK</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -26,22 +26,21 @@ h4{
     padding: 8px 30px;
     font-weight: 500;
     letter-spacing: 1.4px;
-    display: inline-block;
 }
 .custom-container{
     max-width: 1304px;
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.swiper-slide{
-    height: 100vh !important;
-}
+
 .swiper-pagination-bullet{
     background-color: #E5E3DE !important;
     width: 60px !important;
     border-radius: 50px !important;
     height: 2px !important;
 }
-
+#side-menu nav li a{
+    font-family:"ivyora-display";
+}

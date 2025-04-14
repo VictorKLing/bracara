@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -11,3 +12,4 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".custom-swiper-button-prev",
       }
   });
+})

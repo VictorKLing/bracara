@@ -44,3 +44,27 @@ h4{
 #side-menu nav li a{
     font-family:"ivyora-display";
 }
+#newsletter p{
+    font-family:"ivyora-display";
+    font-size: 32px;
+}
+@media screen and (max-width: 1024px) {
+    h1{
+        font-family:"ivyora-display";
+        font-size: 44px;
+        font-weight: 400;
+    }
+    h2{
+        font-family:"ivyora-display";
+        font-size: 36px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .swiper-slide h2{
+        font-size: 44px;
+    }
+    #newsletter span{
+        font-size: 32px;
+    }
+}

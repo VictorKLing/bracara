@@ -850,6 +850,12 @@
   .text-\[42px\] {
     font-size: 42px;
   }
+  .text-\[44px\] {
+    font-size: 44px;
+  }
+  .text-\[82px\] {
+    font-size: 82px;
+  }
   .leading-11 {
     --tw-leading: calc(var(--spacing) * 11);
     line-height: calc(var(--spacing) * 11);
@@ -888,6 +894,9 @@
   }
   .text-\[26p\] {
     color: 26p;
+  }
+  .text-\[44p\] {
+    color: 44p;
   }
   .text-dark {
     color: var(--color-dark);
@@ -1210,6 +1219,11 @@
   .lg\:text-\[14px\] {
     @media (width >= 64rem) {
       font-size: 14px;
+    }
+  }
+  .lg\:text-\[44px\] {
+    @media (width >= 64rem) {
+      font-size: 44px;
     }
   }
 }

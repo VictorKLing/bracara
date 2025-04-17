@@ -248,9 +248,6 @@
   .mt-\[55px\] {
     margin-top: 55px;
   }
-  .mt-\[60p\] {
-    margin-top: 60p;
-  }
   .mt-\[60px\] {
     margin-top: 60px;
   }
@@ -265,9 +262,6 @@
   }
   .mt-\[100px\] {
     margin-top: 100px;
-  }
-  .mt-\[7460px\] {
-    margin-top: 7460px;
   }
   .mt-auto {
     margin-top: auto;
@@ -290,11 +284,20 @@
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
+  .mb-\[12\] {
+    margin-bottom: 12;
+  }
   .mb-\[45px\] {
     margin-bottom: 45px;
   }
   .mb-\[60px\] {
     margin-bottom: 60px;
+  }
+  .mb-\[120\] {
+    margin-bottom: 120;
+  }
+  .mb-\[120px\] {
+    margin-bottom: 120px;
   }
   .ml-\[218px\] {
     margin-left: 218px;
@@ -334,6 +337,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
   }
   .max-h-screen {
     max-height: 100vh;
@@ -387,6 +393,9 @@
   }
   .resize {
     resize: both;
+  }
+  .list-decimal {
+    list-style-type: decimal;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -588,6 +597,9 @@
   .pt-\[115px\] {
     padding-top: 115px;
   }
+  .pt-\[120px\] {
+    padding-top: 120px;
+  }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
   }
@@ -678,6 +690,9 @@
   .text-\[32px\] {
     font-size: 32px;
   }
+  .text-\[36px\] {
+    font-size: 36px;
+  }
   .text-\[42px\] {
     font-size: 42px;
   }
@@ -708,6 +723,12 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[3\] {
+    color: 3;
+  }
+  .text-\[36\] {
+    color: 36;
+  }
   .text-dark {
     color: var(--color-dark);
   }
@@ -729,6 +750,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
@@ -780,6 +806,11 @@
   .lg\:mb-\[100px\] {
     @media (width >= 64rem) {
       margin-bottom: 100px;
+    }
+  }
+  .lg\:ml-\[218px\] {
+    @media (width >= 64rem) {
+      margin-left: 218px;
     }
   }
   .lg\:block {
@@ -1023,6 +1054,11 @@
   .lg\:text-\[14px\] {
     @media (width >= 64rem) {
       font-size: 14px;
+    }
+  }
+  .lg\:text-\[42px\] {
+    @media (width >= 64rem) {
+      font-size: 42px;
     }
   }
 }

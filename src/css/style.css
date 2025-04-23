@@ -46,6 +46,25 @@ h4{
     font-family:"ivyora-display";
     font-size: 32px;
 }
+.inst-list {
+    counter-reset: item;
+    list-style: none;
+    padding: 0;
+}
+.inst-list li{
+    position: relative;
+}
+.inst-list li::before {
+    counter-increment: item;
+    content: counter(item, decimal-leading-zero) ". ";
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #A8A491;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 @media screen and (max-width: 1024px) {
     h1{
         font-family:"ivyora-display";
@@ -66,3 +85,4 @@ h4{
         font-size: 32px;
     }
 }
+

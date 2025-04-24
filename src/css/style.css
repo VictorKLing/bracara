@@ -73,6 +73,7 @@ h3{
 .faq-button.active::before{
     height: 31.5px;
 }
+
 @media screen and (max-width: 1024px) {
     h3{
         font-size: 24px;
@@ -82,6 +83,9 @@ h3{
     }
     #newsletter span{
         font-size: 32px;
+    }
+    #page-book{
+        box-shadow: none
     }
 }
 

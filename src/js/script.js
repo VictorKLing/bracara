@@ -47,7 +47,7 @@ document.querySelectorAll(".faq-button").forEach(button => {
             content.style.maxHeight = content.scrollHeight + "px";
             content.classList.add('mt-[60px]')
         }
-        icon.classList.toggle("rotate-90");
+        button.classList.toggle("active");
     });
 });
 

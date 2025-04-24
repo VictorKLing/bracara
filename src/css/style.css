@@ -6,14 +6,10 @@ h1{
 }
 h2{
     font-family:"ivyora-display";
-    font-size: 42px;
 }
 h3{
     font-family:"ivyora-display";
     font-size: 32px;
-}
-h4{
-    font-size: 17px;
 }
 
 .btn-primary{
@@ -65,16 +61,19 @@ h4{
     top: 0px;
     left: 0px;
 }
+.faq-button::before{
+    content: '';
+    height: 0;
+    width: 2px;
+    background-color: #A8A491;
+    position: absolute;
+    right: 45px;
+    transition: .3s;
+}
+.faq-button.active::before{
+    height: 31.5px;
+}
 @media screen and (max-width: 1024px) {
-    h1{
-        font-family:"ivyora-display";
-        font-size: 44px;
-        font-weight: 400;
-    }
-    h2{
-        font-family:"ivyora-display";
-        font-size: 36px;
-    }
     h3{
         font-size: 24px;
     }

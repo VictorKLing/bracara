@@ -61,25 +61,24 @@ document.querySelectorAll(".faq-button").forEach(button => {
 const audio = document.getElementById("audioPlayer");
 const playButton = document.getElementById("playButton");
 const progressBar = document.getElementById("progressBar");
-
-playButton.addEventListener("click", () => {
-  if (audio.paused) {
-    audio.play();
-    playButton.textContent = "⏸";
-  } else {
-    audio.pause();
-    playButton.textContent = "▶";
-  }
-});
-
-audio.addEventListener("timeupdate", () => {
-  progressBar.value = (audio.currentTime / audio.duration) * 100 || 0;
-});
-
-progressBar.addEventListener("input", () => {
-  audio.currentTime = (progressBar.value / 100) * audio.duration;
-});
-
+if(playButton){
+  playButton.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playButton.textContent = "⏸";
+    } else {
+      audio.pause();
+      playButton.textContent = "▶";
+    }
+  });
+  audio.addEventListener("timeupdate", () => {
+    progressBar.value = (audio.currentTime / audio.duration) * 100 || 0;
+  });
+  
+  progressBar.addEventListener("input", () => {
+    audio.currentTime = (progressBar.value / 100) * audio.duration;
+  });
+}
 
 // audio player
 // audio player

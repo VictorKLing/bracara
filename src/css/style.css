@@ -74,6 +74,16 @@ h3{
     height: 31.5px;
 }
 
+#datepicker{
+    position: absolute;
+    height: 38px;
+    width: 146px;
+    margin-top: -12px;
+    margin-left: -85px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
     h3{
         font-size: 24px;
@@ -89,3 +99,80 @@ h3{
     }
 }
 
+#ui-datepicker-div{
+    padding: 32px;
+    height: 380px;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid #A8A491;
+    background-color: #F0F0F0;
+}
+.ui-datepicker-calendar{
+    width: 100%;
+    margin-top: 28px;
+}
+.ui-datepicker-calendar thead span{
+    font-size: 15px;
+    font-weight: 400;
+}
+.ui-datepicker-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.ui-datepicker-calendar td{
+    width: 38px;
+    height: 38px;
+}
+.ui-datepicker-calendar a{
+    display: block;
+    width: 38px;
+    margin: 4px 0;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: transparent;
+    filter: brightness(0) saturate(100%) invert(60%) sepia(10%) saturate(600%) hue-rotate(30deg);
+    width: 20px;
+}
+.ui-datepicker-prev{
+    background-image: url(../img/icons/chevron-left.png);
+    
+}
+.ui-datepicker-next{
+    background-image: url(../img/icons/chevron-right.png);
+    
+}
+.ui-datepicker-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    pointer-events: none;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #A8A491;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+    text-align: center;
+    background-color: transparent !important;
+    transition: .3s !important;
+    color: #000 !important;
+    border-radius: 4px;
+    padding: 10px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default:hover{
+    background-color: #A8A491 !important;
+    color: #fff !important;
+}
+
+#ui-datepicker-div{
+    margin-top: 8px;
+    margin-left: -230px;
+}

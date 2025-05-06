@@ -82,3 +82,30 @@ if(playButton){
 
 // audio player
 // audio player
+
+
+// toggle categoria
+// toggle categoria
+
+const toggleBtn = document.getElementById('toggleCategoria');
+const categoriaForm = document.getElementById('categoriaForm');
+
+toggleBtn.addEventListener('click', () => {
+  if (categoriaForm.classList.contains('max-h-0')) {
+    categoriaForm.classList.remove('max-h-0');
+    categoriaForm.classList.add('max-h-[1000px]');
+    categoriaForm.classList.replace('border-0', 'border');
+    categoriaForm.classList.add('border-t-0');
+    toggleBtn.classList.replace('rounded-[20px]', 'rounded-t-[20px]');
+  } else {
+    categoriaForm.classList.remove('max-h-[1000px]');
+    categoriaForm.classList.add('max-h-0');
+    categoriaForm.classList.replace('border', 'border-0');
+    categoriaForm.classList.remove('border-t-0');
+    toggleBtn.classList.replace('rounded-t-[20px]', 'rounded-[20px]');
+
+  }
+});
+
+// toggle categoria
+// toggle categoria

@@ -9,7 +9,6 @@ h2{
 }
 h3{
     font-family:"ivyora-display";
-    font-size: 32px;
 }
 
 .btn-primary{
@@ -20,6 +19,11 @@ h3{
     padding: 8px 30px;
     font-weight: 500;
     letter-spacing: 1.4px;
+    transition: .3s;
+}
+.btn-primary:hover{
+    background-color: #0F0E0E;
+    color: #A8A491;
 }
 .custom-container{
     max-width: 1304px;
@@ -35,13 +39,6 @@ h3{
     border-radius: 50px !important;
     height: 2px !important;
 }
-#side-menu nav li a{
-    font-family:"ivyora-display";
-}
-#newsletter p{
-    font-family:"ivyora-display";
-    font-size: 32px;
-}
 .inst-list {
     counter-reset: item;
     list-style: none;
@@ -50,24 +47,14 @@ h3{
 .inst-list li{
     position: relative;
 }
-.inst-list li::before {
-    counter-increment: item;
-    content: counter(item, decimal-leading-zero) ". ";
-    margin-right: 8px;
-    font-weight: bold;
-    font-size: 22px;
-    color: #A8A491;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
+
 .faq-button::before{
     content: '';
     height: 0;
     width: 2px;
     background-color: #A8A491;
     position: absolute;
-    right: 45px;
+    right: 25.5px;
     transition: .3s;
 }
 .faq-button.active::before{
@@ -84,10 +71,19 @@ h3{
     cursor: pointer;
 }
 
+.inst-list li::before {
+    counter-increment: item;
+    content: counter(item, decimal-leading-zero) ". ";
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #A8A491;
+    position: absolute;
+    top: 0px;
+    left: -40px
+
+}
 @media screen and (max-width: 1024px) {
-    h3{
-        font-size: 24px;
-    }
     .swiper-slide h2{
         font-size: 44px;
     }
@@ -97,8 +93,10 @@ h3{
     #page-book{
         box-shadow: none
     }
+    .inst-list li::before {
+        left: 0px;
+    }
 }
-
 #ui-datepicker-div{
     padding:  32px 32px 26px 32px;
     height: max-content;
